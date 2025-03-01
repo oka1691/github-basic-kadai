@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+}
+header {
+    margin: 0px 0px 20px 0px;
+    background-color: rgb(244,79,79);  
+    color: rgb(255,255,255);
+}
+main {
+    padding: 10px;
+}
+#parent {
+    display:flex;
+    justify-content:space-between;
+}
+
+.contents {
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(238,204,204);
+    flex-basis: 25%;
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+h2 {
+    font-size: 25px;
+    text-decoration: underline 3px dotted rgb(236,122,122);
+}
+h2::before {
+    content:"⚫︎";
+    color: rgb(239, 111, 139);
+}
+
+p:nth-child(3)::first-letter {
+    font-weight: bold ;
+    color: rgb(97,206,249);
+}
+image{
+    margin: 10px 0px 10px 0px;
+    width: 70%;
+}
+footer{
+    background-color: rgb(244, 79, 79);
+
+}
+a:link{
+    color: rgb(255, 255, 255);
+
+}
+a:visited{
+    color:rgb(193, 234, 251);
+
+}
+a:hover{
+    color:rgb(245, 178, 168) ;
+}
+div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: orange;
+}
+@media screen and (max-width: 768px) {
+    div {
+        display: block;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 25px;
+    }
+}
